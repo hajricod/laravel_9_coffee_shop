@@ -38,6 +38,7 @@
         </div>
     </div>
 </div>
+
 <div id="coffee-menu" class="row h-100 d-flex align-items-center"
     style="
     background-image: url({{asset('images/pexels-adam-lukac-773958.jpg')}});
@@ -90,7 +91,7 @@
 </div>
 
 <div id="contact-us" class="row min-vh-100  d-flex align-items-center"
-style="
+    style="
     background-image: url({{asset('images/pexels-aksonsat-uanthoeng-1078850.jpg')}});
     background-size:cover;">
     <div class="col h-75 p-0">
@@ -123,4 +124,5 @@ style="
         </div>
     </div>
 </div>
+
 @endsection
