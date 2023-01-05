@@ -89,11 +89,38 @@
     </div>
 </div>
 
-<div id="contact-us" class="row h-100"
+<div id="contact-us" class="row min-vh-100  d-flex align-items-center"
 style="
     background-image: url({{asset('images/pexels-aksonsat-uanthoeng-1078850.jpg')}});
     background-size:cover;">
-    <div class="col h-100 p-0">
+    <div class="col h-75 p-0">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="card bg-dark w-100 border-0" style="--bs-bg-opacity: 0.3">
+                        <div class="card-body">
+                            <form action="" method="post">
+                                <div class="mb-3">
+                                    <label for="name" class="text-light mb-1">{{__('Name')}}</label>
+                                    <input class="form-control py-3 bg-light border-0 text-light" type="text" name="name" id="name" style="--bs-bg-opacity: 0.3" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="text-light mb-1">{{__('Email')}}</label>
+                                    <input class="form-control py-3 bg-light border-0 text-light" type="email" name="email" id="email" style="--bs-bg-opacity: 0.3" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="text-light mb-1">{{__('Message')}}</label>
+                                    <textarea class="form-control py-3 bg-light border-0 text-light" name="message" id="message" style="--bs-bg-opacity: 0.3" rows="10" required></textarea>
+                                </div>
+                                <div class="d-grid gap-2 col-4 mx-auto">
+                                    <button class="btn btn-outline-light" type="submit">Send</button>
+                                  </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 @endsection
