@@ -7,6 +7,12 @@
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
 
+// View ports
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+
 html, body {
     height: 100%;
     background-color: $dark;
@@ -19,4 +25,9 @@ html, body {
 .navbar {
     --bs-bg-opacity: .5;
     background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+
+    @media screen and (max-width: $md) {
+        --bs-bg-opacity: 1;
+    }
+
 }
