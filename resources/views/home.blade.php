@@ -100,18 +100,19 @@
                 <div class="col-md-6 offset-md-3">
                     <div class="card bg-dark w-100 border-0" style="--bs-bg-opacity: 0.3">
                         <div class="card-body">
-                            <form action="" method="post">
+                            <form action="/home" method="post">
+                                @csrf
                                 <div class="mb-3">
                                     <label for="name" class="text-light mb-1">{{__('Name')}}</label>
-                                    <input class="form-control py-3 bg-light border-0 text-light" type="text" name="name" id="name" style="--bs-bg-opacity: 0.3" required>
+                                    <input class="form-control py-3 bg-light border-0 text-light" type="text" name="name" id="name" value="Ahmed Al-hajri" style="--bs-bg-opacity: 0.3" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="email" class="text-light mb-1">{{__('Email')}}</label>
-                                    <input class="form-control py-3 bg-light border-0 text-light" type="email" name="email" id="email" style="--bs-bg-opacity: 0.3" required>
+                                    <input class="form-control py-3 bg-light border-0 text-light" type="email" name="email" id="email" style="--bs-bg-opacity: 0.3"  value="hajricod@gmail.com" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="message" class="text-light mb-1">{{__('Message')}}</label>
-                                    <textarea class="form-control py-3 bg-light border-0 text-light" name="message" id="message" style="--bs-bg-opacity: 0.3" rows="10" required></textarea>
+                                    <textarea class="form-control py-3 bg-light border-0 text-light" name="message" id="message" style="--bs-bg-opacity: 0.3" rows="10" required>test test</textarea>
                                 </div>
                                 <div class="d-grid gap-2 col-4 mx-auto">
                                     <button class="btn btn-outline-light" type="submit">Send</button>

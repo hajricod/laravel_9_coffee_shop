@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\Contact;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -24,5 +26,10 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+    }
+
+    public function store(Request $request) {
+        Mail::to($request->mail, 'Ahmed')
+        ->send(new Contact($request->mail));
     }
 }
