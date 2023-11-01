@@ -70,6 +70,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/#contact-us">{{ __('Contact') }}</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/orders">{{ __('Order') }}</a>
+                </li>
             </ul>
 
             <!-- Right Side Of Navbar -->
