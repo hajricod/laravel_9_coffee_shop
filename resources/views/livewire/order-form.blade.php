@@ -1,8 +1,11 @@
 <form wire:submit.prevent="submit" class="text-light">
-    @for ($i = 1; $i < $input; $i++)
+    <div class="mb-3">
+        <input wire:model='input' class="form-control" type="number">
+    </div>
+    @for ($i = 0; $i < $input; $i++)
     <div class="mb-3">
         <label for="title">Title</label>
-        <input wire:model='title.{{$i}}' class="form-control" type="text" name="title" id="title">
+        <input wire:model='title.{{$i}}' class="form-control" type="text" name="title.{{$i}}" id="title.{{$i}}">
         @error('title.'.$i) <span class="error">{{ $message }}</span> @enderror
     </div>
     @endfor
