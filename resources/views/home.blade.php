@@ -39,56 +39,7 @@
     </div>
 </div>
 
-<div id="coffee-menu" class="row h-100 d-flex align-items-center"
-    style="
-    background-image: url({{asset('images/pexels-adam-lukac-773958.jpg')}});
-    background-size:cover;
-    background-position: center;
-    background-blend-mode: overlay;
-    background-color: var(--bs-dark);
-    overflow-y: auto">
-
-    <div class="col-lg-3 col-md-6 bg-light bg-opacity-75 h-50 d-flex align-items-end justify-content-center p-0"
-    style="
-    background-image: url({{asset('images/pexels-rodolfo-quirós-1727123.jpg')}});
-    background-size:cover;
-    background-position: center;">
-        <div class="p-3 text-center bg-dark bg-opacity-25 w-100">
-            <h3 class="text-light">Amricano</h3>
-            <button type="button" class="btn btn-outline-light w-100">Add</button>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6 bg-light bg-opacity-75 h-50 d-flex align-items-end justify-content-center p-0"
-    style="
-    background-image: url({{asset('images/pexels-anastasia-belousova-3556686.jpg')}});
-    background-size:cover;
-    background-position: center;">
-        <div class="p-3 text-center bg-dark bg-opacity-25 w-100">
-            <h3 class="text-light">Latte</h3>
-            <button type="button" class="btn btn-outline-light w-100">Add</button>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6 bg-light bg-opacity-75 h-50 d-flex align-items-end justify-content-center p-0"
-    style="
-    background-image: url({{asset('images/pexels-pixabay-459306.jpg')}});
-    background-size:cover;
-    background-position: center;">
-        <div class="p-3 text-center bg-dark bg-opacity-25 w-100">
-            <h3 class="text-light">Cappuccino</h3>
-            <button type="button" class="btn btn-outline-light w-100">Add</button>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6 bg-light bg-opacity-75 h-50 d-flex align-items-end justify-content-center p-0"
-    style="
-    background-image: url({{asset('images/pexels-szabó-viktor-3220996.jpg')}});
-    background-size:cover;
-    background-position: center;">
-        <div class="p-3 text-center bg-dark bg-opacity-25 w-100">
-            <h3 class="text-light">Cortado</h3>
-            <button type="button" class="btn btn-outline-light w-100">Add</button>
-        </div>
-    </div>
-</div>
+<livewire:products />
 
 <div id="contact-us" class="row min-vh-100  d-flex align-items-center"
     style="
