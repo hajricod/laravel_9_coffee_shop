@@ -14,7 +14,18 @@ class UsersController extends Controller
      */
     public function index()
     {
-        return view('users.index');
+        $data = [];
+
+        for ($i=0; $i < 5; $i++) { 
+            $data[$i]['question'] = "this is question ".$i;
+
+            for ($j=1; $j < 5; $j++) { 
+                $data[$i]['answers'][] = 'answer q'.$i .' '.$j;
+            }
+        
+        }
+
+        return view('users.index', compact('data'));
     }
 
     /**
